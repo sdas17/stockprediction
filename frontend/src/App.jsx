@@ -1,11 +1,15 @@
 import React from 'react'
-import './App.css'
+import Header from './pages/Header'
+import Main from './pages/Main'
+import Footer from './pages/Footer'
 
 function App() {
 
   return (
     <>
-    <h1>New Form UI in progress</h1>
+    <Header/>
+    <Main/>
+    <Footer/>
 
     </>
   )
