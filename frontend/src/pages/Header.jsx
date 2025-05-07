@@ -1,33 +1,18 @@
 import React from 'react'
+import Button from '../assets/resuable/Button'
 
 const Header = () => {
   return (
-    <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+  <>
+  <nav className="navbar container pt-3 pb-2">
+  <a className="navbar-brand" href="#">Navbar</a>
+    <div style={{display:"flex"}}>
+      <Button text="Login" classample="btn btn-success"/>
+      &nbsp;
+      <Button text="Register" classample="btn btn-light"/>
     </div>
-  </div>
-</nav>
-    </div>
+  </nav>
+  </>
   )
 }
 
