@@ -1,4 +1,9 @@
-from django.http import JsonResponse
+from rest_framework import generics
+from .Serializers import UserSerializer
+from django.contrib.auth.models import User
+from rest_framework.permissions import AllowAny
 
-def hello_world(request):
-    return JsonResponse({'message': 'Hello from Django!'})
+class UserCreateView(generics.CreateAPIView):
+    queryset=User.objects.all()
+    serializer_class = UserSerializer
+    permission_classes=[AllowAny]
