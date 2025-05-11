@@ -1,15 +1,23 @@
-body{
-    background-color: #212529;
-}
-.bg-light-dark{
-    background-color: #2B3035;
-}
-#root {
-    display:flex;
-    flex-direction:column
-    min-height:100vh;
+/* 
 
-}
-.container{
-    flex:1;
-}
+/* App.css or a global stylesheet */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* ensures it stays above other content */
+  }
+  
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+  
+  .content-wrapper {
+    padding-top: 80px;  /* adjust depending on your header height */
+    padding-bottom: 60px; /* adjust depending on your footer height */
+  }
+  
