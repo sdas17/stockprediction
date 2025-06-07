@@ -3,7 +3,7 @@ import { AuthContext } from './common/AuthProvider';
 import { Link, useNavigate } from 'react-router-dom';
 const Header = () => {
   const { login, setLogin } = useContext(AuthContext);
-  const navigate = useNavigate(); // 👈 add this
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
     localStorage.removeItem('accessToken');
